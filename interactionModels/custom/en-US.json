@@ -1,0 +1,74 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "emot",
+              "type": "Emotions"
+            }
+          ],
+          "name": "EmotionInfoRequest",
+          "samples": [
+            "I am {emot}",
+            "I feel {emot}",
+            "I am feeling {emot}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Depression"
+              }
+            },
+            {
+              "name": {
+                "value": "Fear"
+              }
+            },
+            {
+              "name": {
+                "value": "Angry"
+              }
+            },
+            {
+              "name": {
+                "value": "Sad"
+              }
+            },
+            {
+              "name": {
+                "value": "Happy"
+              }
+            }
+          ],
+          "name": "Emotions"
+        }
+      ],
+      "invocationName": "emotional support assistant"
+    }
+  }
+}
